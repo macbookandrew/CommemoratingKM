@@ -7,3 +7,9 @@ function add_custom_css() {
 }
 add_action( 'wp_print_styles', 'add_custom_css' );
 
+// add footer credits
+function custom_footer_credits() {
+    echo '&copy;' . date( 'Y' ) . ' <a href="http://www.mauneylibrary.org/" target="_blank">Mauney Memorial Library</a> and <a href="http://www.kingsmountainmuseum.org/" target="_blank">Kings Mountain Historial Museum</a><br/>
+    <a href="https://www.andrewrminion.com/" target="_blank">Designed by AndrewRMinion Design</a> | ';
+}
+add_action( 'twentyfifteen_credits', 'custom_footer_credits' );
