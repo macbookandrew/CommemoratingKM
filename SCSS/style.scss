@@ -167,7 +167,6 @@ a img {
 .comment-navigation .nav-next a:after,
 .comment-navigation .nav-previous a:before,
 .posted-on:before,
-.byline:before,
 .cat-links:before,
 .tags-links:before,
 .comments-link:before,
@@ -180,8 +179,7 @@ a img {
 .image-navigation a:after,
 .format-link .entry-title a:after,
 .entry-content .more-link:after,
-.entry-summary .more-link:after,
-.author-link:after {
+.entry-summary .more-link:after {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     display: inline-block;
@@ -1773,73 +1771,6 @@ a.post-thumbnail:focus {
     top: 5px;
 }
 
-.author-info {
-    border-top: 1px solid #eaeaea;
-    border-top: 1px solid rgba(51, 51, 51, 0.1);
-    margin: 0 7.6923%;
-    padding: 7.6923% 0;
-}
-
-.author-info .avatar {
-    float: left;
-    height: 36px;
-    margin: 0 1.6em 1.6em 0;
-    width: 36px;
-}
-
-.author-heading {
-    color: #707070;
-    color: rgba(51, 51, 51, 0.7);
-    font-family: "Noto Sans", sans-serif;
-    font-size: 12px;
-    font-size: 1.2rem;
-    letter-spacing: 0.04em;
-    margin-bottom: 1.5em;
-    text-transform: uppercase;
-}
-
-.author-title {
-    clear: none;
-}
-
-.author-bio {
-    font-size: 12px;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    overflow: hidden;
-    padding-bottom: 1px;
-}
-
-.author-description {
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-    word-wrap: break-word;
-}
-
-.author-description a {
-    border-bottom: 1px solid #333;
-}
-
-.author-description a:hover,
-.author-description a:focus {
-    border-bottom: 0;
-}
-
-.author-description > :last-child {
-    margin-bottom: 0;
-}
-
-.author-link {
-    white-space: nowrap;
-}
-
-.author-link:after {
-    content: "\f429";
-    position: relative;
-    top: 1px;
-}
-
 .entry-footer {
     background-color: #f7f7f7;
     color: #707070;
@@ -1866,6 +1797,8 @@ a.post-thumbnail:focus {
     color: #333;
 }
 
+.byline { display: none; }
+
 .sticky-post {
     background-color: #333;
     color: #fff;
@@ -1886,7 +1819,6 @@ a.post-thumbnail:focus {
 }
 
 .posted-on:before,
-.byline:before,
 .cat-links:before,
 .tags-links:before,
 .comments-link:before,
@@ -1898,7 +1830,6 @@ a.post-thumbnail:focus {
 }
 
 .posted-on,
-.byline,
 .cat-links,
 .tags-links,
 .comments-link,
@@ -1945,10 +1876,6 @@ a.post-thumbnail:focus {
 
 .posted-on:before {
     content: "\f307";
-}
-
-.byline:before {
-    content: "\f304";
 }
 
 .cat-links:before {
@@ -2999,8 +2926,6 @@ p > video {
     .post-navigation .meta-nav,
     .image-navigation,
     .comment-navigation,
-    .author-heading,
-    .author-bio,
     .entry-footer,
     .page-links a,
     .page-links span,
@@ -3325,23 +3250,7 @@ p > video {
         top: 2px;
     }
 
-    .author-info {
-        margin: 0 9.0909%;
-        padding: 9.0909% 0;
-    }
-
-    .author-info .avatar {
-        height: 42px;
-        margin: 0 1.6471em 1.6471em 0;
-        width: 42px;
-    }
-
-    .author-link:after {
-        top: 3px;
-    }
-
     .posted-on:before,
-    .byline:before,
     .cat-links:before,
     .tags-links:before,
     .comments-link:before,
@@ -3628,8 +3537,6 @@ p > video {
     .post-navigation .meta-nav,
     .comment-navigation,
     .image-navigation,
-    .author-heading,
-    .author-bio,
     .entry-footer,
     .page-links a,
     .page-links span,
@@ -3896,19 +3803,7 @@ p > video {
         top: 3px;
     }
 
-    .author-info .avatar {
-        height: 56px;
-        margin: 0 1.6842em 1.6842em 0;
-        width: 56px;
-    }
-
-    .author-link:after {
-        font-size: 24px;
-        top: 0;
-    }
-
     .posted-on:before,
-    .byline:before,
     .cat-links:before,
     .tags-links:before,
     .comments-link:before,
@@ -4247,8 +4142,6 @@ p > video {
     .post-navigation .meta-nav,
     .comment-navigation,
     .image-navigation,
-    .author-heading,
-    .author-bio,
     .entry-footer,
     .page-links a,
     .page-links span,
@@ -4568,28 +4461,11 @@ p > video {
         top: 5px;
     }
 
-    .author-info {
-        margin: 0 10%;
-        padding: 10% 0;
-    }
-
-    .author-info .avatar {
-        height: 36px;
-        margin: 0 1.5em 1.5em 0;
-        width: 36px;
-    }
-
-    .author-link:after {
-        font-size: 16px;
-        top: 1px;
-    }
-
     .entry-footer {
         padding: 5% 10%;
     }
 
     .posted-on:before,
-    .byline:before,
     .cat-links:before,
     .tags-links:before,
     .comments-link:before,
@@ -4904,8 +4780,6 @@ p > video {
     .post-navigation .meta-nav,
     .comment-navigation,
     .image-navigation,
-    .author-heading,
-    .author-bio,
     .entry-footer,
     .page-links a,
     .page-links span,
@@ -5149,18 +5023,7 @@ p > video {
         top: 2px;
     }
 
-    .author-info .avatar {
-        height: 42px;
-        margin: 0 1.6471em 1.6471em 0;
-        width: 42px;
-    }
-
-    .author-link:after {
-        top: 3px;
-    }
-
     .posted-on:before,
-    .byline:before,
     .cat-links:before,
     .tags-links:before,
     .comments-link:before,
@@ -5445,8 +5308,6 @@ p > video {
     .post-navigation .meta-nav,
     .comment-navigation,
     .image-navigation,
-    .author-heading,
-    .author-bio,
     .entry-footer,
     .page-links a,
     .page-links span,
@@ -5701,19 +5562,7 @@ p > video {
         top: 3px;
     }
 
-    .author-info .avatar {
-        height: 56px;
-        margin: 0 1.6842em 1.6842em 0;
-        width: 56px;
-    }
-
-    .author-link:after {
-        font-size: 24px;
-        top: 0;
-    }
-
     .posted-on:before,
-    .byline:before,
     .cat-links:before,
     .tags-links:before,
     .comments-link:before,
@@ -5927,7 +5776,6 @@ p > video {
     .site-title a,
     .site-description,
     .post-title,
-    .author-heading,
     .entry-footer,
     .entry-footer a,
     .taxonomy-description,
@@ -5953,7 +5801,6 @@ p > video {
     .site-header,
     .site-footer,
     .hentry + .hentry,
-    .author-info,
     .page-header,
     .comments-area,
     .comment-list + .comment-respond,
@@ -6008,10 +5855,6 @@ p > video {
     }
 
     .post-thumbnail img {
-        margin: 0;
-    }
-
-    .author-info {
         margin: 0;
     }
 
