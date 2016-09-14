@@ -15,6 +15,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+$page-background-color:    rgba(255, 255, 255, 0.8);
 
 /**
  * Table of Contents
@@ -928,7 +929,7 @@ a:focus {
 }
 
 .post-navigation {
-    background-color: #fff;
+    background-color: $page-background-color;
     border-top: 1px solid #eaeaea;
     border-top: 1px solid rgba(51, 51, 51, 0.1);
     font-weight: 700;
@@ -998,7 +999,7 @@ a:focus {
 }
 
 .pagination {
-    background-color: #fff;
+    background-color: $page-background-color;
     border-top: 1px solid rgba(51, 51, 51, 0.1);
     font-family: "Noto Sans", sans-serif;
 }
@@ -1287,7 +1288,7 @@ img.aligncenter {
  */
 
 .site-header {
-    background-color: #fff;
+    background-color: $page-background-color;
     border-bottom: 1px solid rgba(51, 51, 51, 0.1);
     padding: 7.6923%;
 }
@@ -1550,7 +1551,7 @@ img.aligncenter {
  */
 
 .secondary {
-    background-color: #fff;
+    background-color: $page-background-color;
     display: none;
     padding: 0 7.6923%;
 }
@@ -1566,7 +1567,7 @@ img.aligncenter {
 }
 
 .site-footer {
-    background-color: #fff;
+    background-color: $page-background-color;
     border-top: 1px solid rgba(51, 51, 51, 0.1);
     padding: 3.84615% 7.6923%;
 }
@@ -1577,7 +1578,7 @@ img.aligncenter {
  */
 
 .hentry {
-    background-color: #fff;
+    background-color: $page-background-color;
     padding-top: 7.6923%;
     position: relative;
 }
@@ -1976,7 +1977,7 @@ a.post-thumbnail:focus {
 }
 
 .page-header {
-    background-color: #fff;
+    background-color: $page-background-color;
     border-bottom: 1px solid rgba(51, 51, 51, 0.1);
     padding: 7.6923%;
 }
@@ -2008,7 +2009,7 @@ a.post-thumbnail:focus {
 }
 
 .page-content {
-    background-color: #fff;
+    background-color: $page-background-color;
     padding: 7.6923%;
 }
 
@@ -2130,7 +2131,7 @@ a.post-thumbnail:focus {
  */
 
 .comments-area {
-    background-color: #fff;
+    background-color: $page-background-color;
     border-top: 1px solid #eaeaea;
     border-top: 1px solid rgba(51, 51, 51, 0.1);
     padding: 7.6923%;
@@ -2574,7 +2575,7 @@ p > video {
  */
 
 .widecolumn {
-    background-color: #fff;
+    background-color: $page-background-color;
     padding: 7.6923%;
 }
 
@@ -4073,7 +4074,7 @@ p > video {
 
 @media screen and (min-width: 59.6875em) {
     body:before {
-        background-color: #fff;
+        background-color: $page-background-color;
         box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
         content: "";
         display: block;
