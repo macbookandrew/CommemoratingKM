@@ -2,8 +2,11 @@
 
 // use minified CSS and dequeue default fonts
 function add_custom_css() {
+    wp_deregister_script( 'twentyfifteen-script' );
     wp_deregister_style( 'twentyfifteen-style' );
     wp_deregister_style( 'twentyfifteen-fonts' );
+
+    wp_enqueue_script( 'twentyfifteen-script', get_stylesheet_directory_uri() . '/js/functions.min.js', array( 'jquery' ), filemtime( get_stylesheet_directory() . '/js/functions.min.js' ), true );
     wp_enqueue_style( 'twentyfifteen-style', get_stylesheet_directory_uri() . '/style.min.css' );
 }
 add_action( 'wp_print_styles', 'add_custom_css' );
