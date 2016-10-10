@@ -12,6 +12,10 @@
 
     </div><!-- .site-content -->
 
+    <div id="sidebar" class="sidebar">
+        <?php get_sidebar(); ?>
+    </div><!-- .sidebar -->
+
     <footer id="colophon" class="site-footer" role="contentinfo">
         <div class="site-info">
             <?php
