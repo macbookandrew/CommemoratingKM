@@ -40,7 +40,6 @@ module.exports = function (grunt) {
     uglify: {
         custom: {
             files: {
-                'js/functions.min.js': 'js/functions.js'
             },
         },
     },
