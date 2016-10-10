@@ -30,7 +30,7 @@ add_action( 'wp_enqueue_scripts', 'add_custom_webfonts' );
 
 // add footer credits
 function custom_footer_credits() {
-    echo '&copy;' . date( 'Y' ) . ' <a href="http://www.mauneylibrary.org/" target="_blank">Mauney Memorial Library</a> and <a href="http://www.kingsmountainmuseum.org/" target="_blank">Kings Mountain Historial Museum</a><br/>
+    echo '&copy;' . date( 'Y' ) . ' <a href="http://www.mauneylibrary.org/" target="_blank">Mauney Memorial Library</a> and <a href="http://www.kingsmountainmuseum.org/" target="_blank">Kings Mountain Historical Museum</a><br/>
     <a href="https://www.andrewrminion.com/" target="_blank">Designed by AndrewRMinion Design</a> | ';
 }
 add_action( 'twentyfifteen_credits', 'custom_footer_credits' );
