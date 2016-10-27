@@ -1587,14 +1587,12 @@ a.post-thumbnail:focus {
     margin-bottom: 0;
 }
 
+h1, h2, h3, h4, h5, h6,
 .entry-content,
 .entry-summary,
 .page-content,
 .comment-content {
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-    word-wrap: break-word;
+    hyphens: none;
 }
 
 .entry-content h1,
